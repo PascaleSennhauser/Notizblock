@@ -192,7 +192,8 @@ header {
 .textarea {
     width: 535px;
     align-items: flex-start;
-
+    display: flex;
+    align-items: center;
 }
 
 .note-input {
@@ -218,27 +219,42 @@ header {
     justify-content: center;
 }
 
+.flex-wrap-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
 .withInput {
-    min-height: 120px;
-    width: 800px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 250px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid rgba(255,229,236, 0.9);
+    background-color: rgba(255,229,236, 0.2);
     border-radius: 10px;
-    margin-bottom: 20px;
+    padding-top: 4px;
+    padding-bottom: 8px;
 }
 
 .note {
     word-wrap: break-word;
+    margin: 0;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 4px;
+    font-size: 16px;
 }
 
 .container-trash {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 10px;
 }
 
 .reload-icon {
@@ -257,6 +273,35 @@ header {
 .main-icon {
     height: 80px;
     padding-top: 30px;
+}
+
+/* Scrollbalken */
+
+/* Width */
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: rgba(139, 140, 137, 0.2);
+    border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background-color: #8B8C89;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8B8C89;
+    cursor: pointer;
 }
 
 /* footer */

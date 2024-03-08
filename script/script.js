@@ -13,9 +13,13 @@ function render() {
     contentShowNotes.innerHTML = '';
 
     if (notes.length > 0) {
+        contentShowNotes.innerHTML = /*html*/`
+            <div class="flex-wrap-container" id="flexWrapContainer"></div>
+        `;
         for (let i = 0; i < notes.length; i++) {
-        const note = notes[i];
-        contentShowNotes.innerHTML += addContentNotes(note, i);
+            const flexWrapContainer = document.getElementById('flexWrapContainer');
+            const note = notes[i];
+            flexWrapContainer.innerHTML += addContentNotes(note, i);
         }
     }
     else {
