@@ -10,33 +10,48 @@
     <script src="./script/script.js"></script>
 </head>
 <body onload="render()">
+    <div class="min-height">
 
-    <!-- header -->
+        <!-- header -->
 
-    <header>
-        <div class="header-div">
-            <div class="logo">
-                <img class="header-icon pink" src="./img/logo-icon.svg">
-                <h1 class="title">Notizen</h1>
+        <header>
+            <div class="header-div">
+                <div class="logo">
+                    <img class="header-icon pink" src="./img/logo-icon.svg">
+                    <h1 class="title">Notizen</h1>
+                </div>
+                <div class="btn-refresh">
+                    <img class="refresh-icon gray" src="./img/refresh-icon.svg" onclick="refresh()">
+                </div>
             </div>
-            <div class="btn-refresh">
-                <img class="refresh-icon gray" src="./img/refresh-icon.svg" onclick="refresh()">
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- notes-section -->
-    <section class="main">
-        <div class="side-menu">
-            <div class="btn-side-menu btn-color hover" id="notesActiv" onclick="showNotes()">
-                <img src="./img/logo-icon.svg" class="side-notes-logo">
+        <!-- notes-section -->
+
+        <section class="main">
+            <div class="side-menu">
+                <div class="btn-side-menu btn-color hover" id="notesActiv" onclick="showNotes()">
+                    <img src="./img/logo-icon.svg" class="side-notes-logo">
+                </div>
+                <div class="btn-side-menu btn-color hover" id="deletedNotesActiv" onclick="showDeletedNotes()">
+                    <img src="./img/trash-icon.svg" class="side-trash-logo">
+                </div>
             </div>
-            <div class="btn-side-menu btn-color hover" id="deletedNotesActiv" onclick="showDeletedNotes()">
-                <img src="./img/trash-icon.svg" class="side-trash-logo">
+            <div class="notes-section" id="content">
             </div>
-        </div>
-        <div class="notes-section" id="content">
-        </div>
-   </section>
+        </section>
+
+
+        <!-- footer -->
+
+        <footer>
+                <div class="footer-container">
+                    <a class="impressum" href="impressum.html">Impressum</a>
+                    <div class="footer-separator">|</div>
+                    <a class="privacy-policy" href="privacy-policy.html">Datenschutz</a>
+                </div>
+        </footer>
+
+    </div>
 </body>
 </html>

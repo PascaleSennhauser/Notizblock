@@ -1,11 +1,5 @@
 /* fonts */
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('./fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf') format('ttf'),
-         url('./fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('ttf');
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     color:#8B8C89;
@@ -28,7 +22,6 @@ p {
     font-size: 18px;
 }
 
-
 /* color */
 
 .gray {
@@ -43,13 +36,20 @@ p {
 
 .rose {
     filter: invert(100%) sepia(77%) saturate(902%) hue-rotate(286deg) brightness(98%) contrast(115%);
-    color: rgba(255,229,236, 0.9);
+    color: #ffe5ece6;
 }
 
 /* header */
 
 body {
     margin: 0;
+}
+
+.min-height {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -257,6 +257,40 @@ header {
 .main-icon {
     height: 80px;
     padding-top: 30px;
+}
+
+/* footer */
+
+footer {
+    height: 64px;
+    background-color: rgba(255,229,236, 0.9);
+    display: flex;
+}
+
+.footer-container {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-separator {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.impressum,
+.privacy-policy {
+    color:#8B8C89;
+    text-decoration: none;
+}
+
+.impressum:hover,
+.privacy-policy:hover {
+    text-decoration: underline;
 }
 
 @media(max-width: 1100px) {
