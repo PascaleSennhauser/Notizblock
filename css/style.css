@@ -307,13 +307,19 @@ footer {
     font-size: 20px;
 }
 
-.impressum-container {
+.impressum-container,
+.datenschutz-container {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .impressum-container h1 {
     margin-bottom: 10px;
+}
+
+.impressum-container a {
+    color:#8B8C89;
 }
 
 @media(max-width: 1100px) {
