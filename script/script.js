@@ -1,4 +1,4 @@
-// Array
+// Arrays
 let notes = [];
 let deletedNotes = [];
 load();
@@ -113,7 +113,6 @@ function shiftNotesToTrash(noteElement) {
 
 function deleteNote(i) {
     deletedNotes.splice(i, 1);
-
     showDeletedNotes();
     save();
 }
@@ -138,9 +137,13 @@ function showDeletedNotes() {
     deletedContent.innerHTML = '';
 
     if (deletedNotes.length > 0) {
+        deletedContent.innerHTML = /*html*/`
+            <div class="flex-wrap-container" id="flexWrapContainer"></div>
+        `;
         for (let i = 0; i < deletedNotes.length; i++) {
+        const flexWrapContainer = document.getElementById('flexWrapContainer');
         const deletedNote = deletedNotes[i];
-        content.innerHTML += addDeletedContentNotes(deletedNote, i);
+        flexWrapContainer.innerHTML += addDeletedContentNotes(deletedNote, i);
         }
     }
     else {
@@ -174,4 +177,3 @@ function reloadNote(noteElement) {
     save();
     showDeletedNotes();
 }
-
