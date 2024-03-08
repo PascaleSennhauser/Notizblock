@@ -13,32 +13,21 @@
         margin-right: 25px;
     }
 
-    
     .noteInput-box {
         width: 450px;
-    }
-
-    .save-button {
-        width: 40px;
-        height: 40px; 
-        margin-left: 14px;
-        margin-right: 14px;
-    }
-    
-    .textarea {
-        width: 360px;
+        margin-bottom: 50px;
     }
     
     .note-input {
-        width: 355px;
-    }
-    
-    .withInput {
-        width: 400px;
+        width: 380px;
     }
 
     p {
         font-size: 12px;
+    }
+
+    .footer-container {
+        padding-left: 30px;
     }
 
 }
@@ -95,18 +84,40 @@
         border-radius: 10px;
     }
     
-    .textarea {
-        width: 220px;
-        height: 100px;
-    }
-    
     .note-input {
-        width: 210px;
-        height: 100px;
-    }
-    
-    .withInput {
-        width: 240px;
+        margin-top: 2px;
+        width: 245px;
+        height: 102px;
+        font-size: 12px;
     }
 
+    .flex-wrap-container {
+        gap: 8px;
     }
+
+    .withInput {
+        height: 200px;
+        width: 100px;
+    }
+
+    .note {
+        font-size: 12px;
+    }
+
+    .datenschutz-container h1 {
+        font-size: 20px;
+    }
+
+    .datenschutz-container h2 {
+        font-size: 18px;
+    }
+
+    .datenschutz-container h3 {
+        font-size: 16px;
+    }
+
+    .datenschutz-container li {
+        font-size: 12px;
+    }
+
+}

@@ -190,7 +190,6 @@ header {
 }
 
 .textarea {
-    width: 535px;
     align-items: flex-start;
     display: flex;
     align-items: center;
@@ -206,7 +205,6 @@ header {
     box-sizing: border-box;
     resize: none;
 }
-
 
 .note-input:focus {
     outline-width: 0;
@@ -230,7 +228,6 @@ header {
     justify-content: center;
     gap: 20px;
 }
-
 
 .withInput {
     height: 250px;
