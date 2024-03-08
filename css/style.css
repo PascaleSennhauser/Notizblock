@@ -1,0 +1,374 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf') format('ttf'),
+         url('./fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#8B8C89;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 30px;
+}
+
+.note-input {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* color */
+
+.gray {
+    filter: invert(58%) sepia(2%) saturate(291%) hue-rotate(39deg) brightness(95%) contrast(92%);
+    color: #8B8C89;
+}
+
+.pink {
+    filter: invert(96%) sepia(44%) saturate(3202%) hue-rotate(284deg) brightness(99%) contrast(113%);
+    color: #ffafcc;
+}
+
+.rose {
+    filter: invert(100%) sepia(77%) saturate(902%) hue-rotate(286deg) brightness(98%) contrast(115%);
+    color: rgba(255,229,236, 0.9);
+}
+
+/* header */
+
+body {
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    border-bottom: 3px solid #ffafcc;
+    box-shadow: 0 5px 5px 0 rgba(255, 175, 204, 0.4)
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1440px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.header-icon {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.title {
+    margin-right: 80px;
+}
+
+.refresh-icon {
+    width: 25px;
+}
+
+.btn-refresh {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-refresh:hover {
+    background-color: rgba(255,229,236, 0.9);
+}
+
+/* main */
+
+.main {
+    display: flex;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+    width: 100px;
+}
+
+.side-notes-logo {
+    width: 25px;
+    filter: invert(58%) sepia(2%) saturate(291%) hue-rotate(39deg) brightness(95%) contrast(92%);
+}
+
+.side-trash-logo {
+    width: 25px;
+    filter: invert(58%) sepia(2%) saturate(291%) hue-rotate(39deg) brightness(95%) contrast(92%);
+}
+
+.btn-side-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.btn-color {
+    background-color: rgba(255,229,236, 0.9);
+}
+
+.notes-section {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0;
+    padding-top: 120px;
+}
+
+.noteInput-box {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffafcc;
+    margin-bottom: 150px;
+    border-radius: 10px;
+}
+
+.save-button {
+    background-color:rgba(255,229,236, 0.9);
+    width: 40px;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.hover:hover {
+    background-color:#ffafcc;
+}
+
+.save-icon {
+    width: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.textarea {
+    width: 535px;
+    align-items: flex-start;
+
+}
+
+.note-input {
+    width: 515px;
+    border: unset;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.note-input:focus {
+    outline-width: 0;
+    background-color: rgba(255,229,236, 0.9);
+    border-radius: 10px;
+    
+}
+
+.contentShowNotes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.withInput {
+    min-height: 120px;
+    width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid rgba(255,229,236, 0.9);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.note {
+    word-wrap: break-word;
+}
+
+.container-trash {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.reload-icon {
+    width: 15px;
+    cursor: pointer;
+    filter: invert(58%) sepia(2%) saturate(291%) hue-rotate(39deg) brightness(95%) contrast(92%);
+    margin-right: 15px;
+}
+
+.trash-icon-content {
+    width: 15px;
+    cursor: pointer;
+    filter: invert(58%) sepia(2%) saturate(291%) hue-rotate(39deg) brightness(95%) contrast(92%);
+}
+
+.main-icon {
+    height: 80px;
+    padding-top: 30px;
+}
+
+@media(max-width: 1100px) {
+    .p-without {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 25px;
+    }
+
+    .btn-refresh {
+        margin-right: 25px;
+    }
+
+    
+    .noteInput-box {
+        width: 450px;
+    }
+
+    .save-button {
+        width: 40px;
+        height: 40px; 
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+    
+    .textarea {
+        width: 360px;
+    }
+    
+    .note-input {
+        width: 355px;
+    }
+    
+    .withInput {
+        width: 400px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 620px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .btn-side-menu {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .notes-section {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .p-without {
+        text-align: center;
+    }
+ 
+    .noteInput-box {
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .save-button {
+        width: 100px;
+        height: 40px; 
+        margin-left: 14px;
+        margin-right: 14px;
+        border-radius: 10px;
+    }
+    
+    .textarea {
+        width: 220px;
+        height: 100px;
+    }
+    
+    .note-input {
+        width: 210px;
+        height: 100px;
+    }
+    
+    .withInput {
+        width: 240px;
+    }
+
+    }
+

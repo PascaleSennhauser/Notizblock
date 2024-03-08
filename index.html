@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS-Notes</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js"></script>
+</head>
+<body onload="render()">
+
+    <!-- header -->
+
+    <header>
+        <div class="header-div">
+            <div class="logo">
+                <img class="header-icon pink" src="./img/logo-icon.svg">
+                <h1 class="title">Notizen</h1>
+            </div>
+            <div class="btn-refresh">
+                <img class="refresh-icon gray" src="./img/refresh-icon.svg" onclick="refresh()">
+            </div>
+        </div>
+    </header>
+
+    <!-- notes-section -->
+    <section class="main">
+        <div class="side-menu">
+            <div class="btn-side-menu btn-color hover" id="notesActiv" onclick="showNotes()">
+                <img src="./img/logo-icon.svg" class="side-notes-logo">
+            </div>
+            <div class="btn-side-menu btn-color hover" id="deletedNotesActiv" onclick="showDeletedNotes()">
+                <img src="./img/trash-icon.svg" class="side-trash-logo">
+            </div>
+        </div>
+        <div class="notes-section" id="content">
+        </div>
+   </section>
+</body>
+</html>
