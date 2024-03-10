@@ -232,7 +232,7 @@ function renderDeletedNotes(deletedContent) {
  * This function shows the deleted notes.
  * @param {String} deletedNote - The current deleted note.
  * @param {Number} i - This is the index of the deleted note.
- * @returns 
+ * @returns The html-element of the deleted note.
  */
 function addDeletedContentNotes(deletedNote, i) {
     return /*html*/ `
